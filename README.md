@@ -1,37 +1,71 @@
-# Product API (Spring Boot)
+# 🛒 Product API – Spring Boot REST API
 
-A simple RESTful backend application built using **Spring Boot** for managing products (e-commerce style).
+A clean, production-ready **RESTful Product Management API** built using **Spring Boot**, documented with **Swagger (OpenAPI 3)**, and deployed live on **Render**.
 
-## Tech Stack
-- Java 21
-- Spring Boot
-- Spring Data JPA
-- H2 In-Memory Database
-- Lombok
-- Maven
+This project demonstrates real-world backend development practices including layered architecture, validation, exception handling, API documentation, and cloud deployment.
+
+---
+
+## Live Deployment
+
+- **Base URL:**  
+  https://product-api-w0rr.onrender.com
+
+- **Swagger UI (Live):**  
+  https://product-api-w0rr.onrender.com/swagger-ui/index.html
+
+---
+
+## API Documentation (Swagger)
+
+The API is fully documented using **Springdoc OpenAPI (Swagger)**.
+
+With Swagger UI, you can:
+- View all available endpoints
+- Test APIs directly from the browser
+- Inspect request and response schemas
+
+Swagger is publicly accessible and requires **no authentication**.
+
+---
 
 ## Features
-- Create Product (POST)
-- Get All Products (GET)
-- Get Product by ID (GET)
-- Update Product (PUT)
-- Delete Product (DELETE)
-- Input Validation
 
-## API Endpoints
+- Full CRUD operations for products
+- RESTful API design
+- Input validation using `@Valid`
+- Custom exception handling
+- In-memory H2 database
+- Swagger / OpenAPI 3 documentation
+- Clean layered architecture
+- Docker-ready application
+- Deployed on Render (cloud)
 
-| Method | Endpoint | Description |
-|------|--------|------------|
-| POST | `/api/products` | Create product |
-| GET | `/api/products` | Get all products |
-| GET | `/api/products/{id}` | Get product by ID |
-| PUT | `/api/products/{id}` | Update product |
-| DELETE | `/api/products/{id}` | Delete product |
+---
 
-## Database
-Uses **H2 in-memory database**.  
-Data is reset when the application restarts.
+## Tech Stack
 
-## Run Locally
-```bash
-mvn spring-boot:run
+- **Java 21**
+- **Spring Boot**
+- Spring Web
+- Spring Data JPA
+- Hibernate
+- H2 Database
+- Springdoc OpenAPI (Swagger)
+- Maven
+- Docker
+- Render (Deployment)
+
+---
+
+## Available REST APIs
+
+| HTTP Method | Endpoint                  | Description              |
+|------------|---------------------------|--------------------------|
+| POST       | `/api/products`           | Create a new product     |
+| GET        | `/api/products`           | Fetch all products       |
+| GET        | `/api/products/{id}`      | Fetch product by ID      |
+| PUT        | `/api/products/{id}`      | Update product by ID     |
+| DELETE     | `/api/products/{id}`      | Delete product by ID     |
+
+All endpoints are **live**, **documented**, and **testable** via Swagger UI.
