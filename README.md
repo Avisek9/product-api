@@ -1,4 +1,4 @@
-# 🛒 Product API – Spring Boot REST API
+# Product API – Spring Boot REST API
 
 A clean, production-ready **RESTful Product Management API** built using **Spring Boot**, documented with **Swagger (OpenAPI 3)**, and deployed live on **Render**.
 
